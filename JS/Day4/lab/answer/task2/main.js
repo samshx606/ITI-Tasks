@@ -13,8 +13,8 @@ var sportError = document.getElementById("sportError");
 var countryError = document.getElementById("countryError");
 
 // patterns
-//edit the name pattern to allow spaces too
-var namePattern = /^[a-zA-Z0-9 ]{3,9}$/;
+// name pattern can contain spaces and alphanumeric characters
+var namePattern = /^[a-zA-Z0-9\s]+$/;
 var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,16}$/;
 var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$/;
 
@@ -120,5 +120,20 @@ function submitForm() {
 
     } else {
         console.log("Form submission failed. Please correct the errors.");
+    }
+}
+
+function resetForm() {
+    nameInput.value = "";
+    passwordInput.value = "";
+    emailInput.value = "";
+    countryInput.value = "";
+    var genderOptions = document.querySelectorAll('input[name="gender"]:checked');
+    if (genderOptions.length) {
+        genderOptions[0].checked = false;
+    }
+    var sportOptions = document.querySelectorAll('input[name="sports"]:checked');
+    for (var i = 0; i < sportOptions.length; i++) {
+        sportOptions[i].checked = false;
     }
 }
