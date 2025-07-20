@@ -1,0 +1,213 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Inter", sans-serif;
+    /* background-color: rgb(83, 84, 121);
+    background-color: rgb(20, 99, 255);; */
+    background-color: white;
+}
+.container {
+    padding: 30px 50px;
+    margin: 0 50px;
+
+}
+/* start header */
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+}
+.header img {
+    width: 100px;
+    float: left;
+}
+.header .links {
+    float: right;
+}
+.header .links li {
+    display: inline-block;
+}
+.btn {
+    background-color: rgb(27 2 72);
+    color: white;
+    padding: 9px 17px;
+    border: 1px solid rgb(27 2 72);
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.header .links a.btn.btn-log{
+    background-color: transparent;
+    color: rgb(27 2 72);
+}
+.clear {
+    clear: both;
+}
+/* end header */
+
+/* start home  */
+.home {
+    text-align: center;
+    margin-bottom: 200px;
+}
+.home h1 {
+    font-size: 51px;
+    width: 450px;
+    margin: auto;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+h1 span {
+    background-color: rgb(195 168 244 / 50%);
+    padding: 0 5px;
+}
+.home p {
+    margin: 20px auto;
+    font-size: 14px;
+    color: #4d4949;
+}
+.home button {
+    width: 168px;
+    padding: 13px 20px;
+    font-size: 13px;
+}
+.home button i {
+    margin-left: 30px;
+    font-size: 11px;
+    font-weight: bold;
+}
+/* end home  */
+
+/* start work */
+.work {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.work h1 {
+    font-size: 45px;
+}
+.work p {
+    margin-top: 7px;
+    font-size: 14px;
+    color: #4d4949;
+
+}
+/* end work */
+
+/* start  templates shared components*/
+.template ,
+.opportunities ,
+.addresses ,
+.ai{
+    margin: 0px 150px 80px;
+}
+.info {
+    width: 45%;
+    padding: 20px;
+    margin-top: 40px;
+}
+.left {
+    float: left;
+}
+.info img {
+    width: 35px;
+}
+.info h3 {
+    max-width: 210px;
+    font-size: 25px;
+    margin: 20px 0px;
+}
+.info p {
+    width: 260px;
+    font-size: 15px;
+    color: #4d4949;
+    line-height: 1.5;
+}
+.image {
+    width: 40%;
+    background-color: rgb(195 168 244 / 30%);
+    text-align: center;
+    border-radius: 7px;
+    padding: 35px 0px;
+}
+.right {
+    float: right;
+}
+.image img{
+    width: 80%;
+    border-radius: 7px;
+}
+/* end  templates shared components*/
+
+/* start template */
+.template .info h3 {
+    width: 140px;
+}
+/* end template */
+
+/* start respona */
+.respona {
+    background-color: rgb(195 168 244 / 30%);
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 10px;
+    width: 900px;
+}
+.respona .my-image {
+    float: left;
+    width: 49%;
+}
+.respona .my-image img {
+    width:300px;
+    border-radius: 10px;
+}
+.respona .text {
+    float: right;
+    margin-top: 50px;
+    width: 49%;
+}
+.respona .text img {
+    width: 35px;
+}
+.respona .text p {
+    color: rgb(0 0 0 / 80%);
+    line-height: 1.5;
+    margin: 26px 0px;
+}
+.respona .text span {
+    font-size: 13px;
+    color: #777;
+
+}
+/* end respona */
+
+/* start footer */
+.footer {
+    background-color: rgb(27 2 72);
+    padding: 15px 100px;
+}
+.footer img {
+    float: left;
+    width: 100px;
+}
+.footer ul.icons {
+    float: right;
+}
+.footer ul li {
+    display: inline-block;
+    margin-left: 8px;
+}
+.footer ul li a i {
+    color: #afabab;
+    font-size: 17px;
+}
+/* end footer */

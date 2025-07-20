@@ -1,0 +1,27 @@
+#content{
+    background-color: rgb(71, 139, 199);
+    border-radius: 5%;
+    width: 750px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.dot{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgb(114, 134, 139);
+    margin: 10px;
+}
+
+#textBox{
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+}

@@ -1,0 +1,147 @@
+
+Agenda :
+=============================
+
+  - Introduction to html
+  - head tags
+  - html text
+  - images
+  - hyperlinks 
+  - containers	
+  - table
+  - form	
+
+==================================
+
+
+
+html : hypertext markup language.
+
+html : Content.
+
+
+tags 
+
+
+
+
+
+===================================
+
+
+  web development toolkit 
+
+    - text editor : notepad , visual studio code (vs code).
+
+
+    - broswer 
+
+
+==================================
+
+
+
+  tags : instructions
+
+
+    1- opening closing tag (nested , regular) :
+
+              <tagname>     ........                </tagname>
+
+            opening tag      content                      closing tag
+
+
+           --------------------- elment -----------------------------
+
+    2- self closing tag (empty , void) :
+
+          <tagname />  or <tagname>
+
+
+          <img>
+
+
+     -----------------------------------------
+
+
+     attribute :    attrname = "value" or 'value'
+
+        src = "images/img1.png"  
+
+
+        1- global attr : id , style 
+
+        2- element attr : src , href , alt , .....
+
+
+
+        <p id="myP">This is a paragraph</p> 
+        <img src="images/flower.png">
+
+
+
+
+=====================================
+
+
+  // Comment 
+    <!--
+    
+        Comment line 1
+        Commment line 2 
+    
+    
+    -->
+
+
+    Document structure (boilerplate):
+    <!-- 
+    
+
+          1- Doctype tag 
+
+              <!DOCTYPE html>   //html5
+
+          2- html tag  : root element
+
+            <html>
+                metadata
+                <head></head>
+                <body>
+
+                    //....
+
+                </body>
+            </html>
+    
+    
+    
+    
+    -->
+
+
+
+
+
+
+=====================================
+
+Emmet tool 
+
+
+
+=====================================
+
+
+
+  html elements :
+        - block element : new line , full width , can set width and height 
+
+
+        - inline element : same line , content width , conent height
+
+              -  replaced inline element : can set width and height
+
+              -  non-replaced inline element : can't set width and height
+
+======================================

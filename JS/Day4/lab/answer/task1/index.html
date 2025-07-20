@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+        <div id="form">
+           <div id="fields">
+                <div id="labels">
+                    <label class= "label" id="idLabel">ID</label>
+                    <label class= "label" id="nameLabel">Name</label>
+                    <label class= "label" id="ageLabel">Age</label>
+                </div>
+                <div id="inputs">
+                    <input type="text" class= "input" id="idInput" placeholder="Enter your ID">
+                    <input type="text" class= "input" id="nameInput" placeholder="Enter your name">
+                    <input type="number" class= "input" id="ageInput" placeholder="Enter your Age">
+                </div>
+           </div>
+            <button id="submit" onclick="addData()">Submit</button>
+
+        </div>
+        <table id="dataTable">
+            <thead id="tableHeader">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

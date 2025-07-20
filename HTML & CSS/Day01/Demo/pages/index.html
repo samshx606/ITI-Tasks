@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My first web page</title>
+    <style>
+
+      body{
+        height: 6000px;
+      }
+    </style>
+    <link rel="stylesheet" href="">
+    <script></script>
+
+    <!-- meta -->
+
+    <meta name="description" content="This is my first web page">
+    <meta name="author" content="j. k. rowling">
+    <meta name="keywords" content="sport,football,.....">
+    <meta charset="utf-8">
+
+    <!-- <meta charset="iso-8859-1"> -->
+
+
+    <!-- <meta http-equiv="refresh" content="2"> -->
+
+    <!-- <meta http-equiv="refresh" content="2; url=http://google.com"> -->
+
+  </head>
+  <body>
+
+    <!-- headings : h1 ... h6 -->
+
+    <!-- SEO : Search engine optimization -->
+
+    <!-- http://127.0.0.1:5500/index.html -->
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+
+    <p>This           is a
+       paragraph</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor labore mollitia iste quo inventore incidunt, dolorum vitae assumenda dolores porro ratione voluptates excepturi, repellat sit tempore officia illo. Provident?</p>
+
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat a, praesentium doloribus atque incidunt possimus dignissimos consequuntur quasi aliquam dolore laborum sint at nobis quisquam, soluta animi iste nisi tempore.
+    Fuga totam ipsam facilis minima impedit laboriosam. Id error animi voluptate ullam voluptatum debitis provident veniam unde iure ex amet tempora expedita est quam ipsa blanditiis, sapiente dolores, nemo qui.</p>
+
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, voluptates cum soluta, dolor eum et modi illo praesentium magnam aut rem doloribus? Officia itaque nemo vel rem sapiente ducimus maiores aliquam at iure magni, fuga amet facilis consequuntur nulla numquam? Repudiandae, nemo eum modi delectus exercitationem recusandae, illum rerum explicabo ipsum, quae nisi ipsa facilis amet ducimus quia eius nihil voluptatem velit asperiores quis. Laudantium doloremque dignissimos accusamus aperiam error illo ea suscipit ipsa, sequi quasi, labore quod totam itaque, est architecto dolor officia! Nemo libero, dignissimos numquam facilis incidunt amet repellendus commodi deleniti minima animi, sequi illo aperiam veritatis?</p>
+   
+    <a href="#list">Go to target</a>
+    
+
+    <pre>This      is 
+      pre</pre>
+
+
+      <p>
+
+          var x = 5;
+          var y = 10;
+          if(x>y)
+            console.log("x is greater than y");
+      </p>
+
+      <pre>
+        var x = 5;
+        var y = 10;
+        if(x>y)
+          console.log("x is greater than y");
+      </pre>
+
+
+      <!-- entities : &; -->
+      <p>This &nbsp; &nbsp; &nbsp; &nbsp; is a <br> paragraph &copy; </p>
+   
+      <hr>
+
+      <!-- ====== lists  : ol , ul , nested list , dl ==== -->
+
+      <h2>My to-do list</h2>
+      <ol type="i">
+        <li>wake up at 7:00 Am</li>
+        <li>take a shower</li>
+        <li>have breakfast</li>
+        <li>go to work</li>
+      </ol>
+
+
+      <h2>hobbies</h2>
+      <ul type="square">
+        <li>reading books</li>
+        <li>playing video games</li>
+        <li>Swimming </li>
+      </ul>
+
+
+      <h2>Skills</h2>
+
+      <ul>
+        <li>Frontend
+
+
+          <ol>
+            <li>html</li>
+            <li>CSS</li>
+          </ol>
+        </li>
+        
+        <li>Backend
+
+          <ol>
+            <li>C#</li>
+            <li>linq</li>
+          </ol>
+        </li>
+      </ul>
+
+
+      <h2>Programming terms</h2>
+      <dl id="list">
+
+        <dt>html</dt>
+        <dd>hypertext markup langauge</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading style sheets</dd>
+      </dl>
+
+
+      <a href="https://www.google.com" target="_blank"> Google </a>
+      <a href="https://www.google.com" target="_blank"> 
+        <img src="../images/google.png" alt="">
+      </a>
+
+      <a href="about.html">about</a>
+
+
+      <!-- ---------------------------- -->
+
+      <img src="https://images.unsplash.com/photo-1515865404355-ddb5b0910878?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300" >
+
+
+      <!-- relative path    vs   ablsolute path -->
+      <!-- <img src="flowers.jpg" alt="flower image" width="300"> -->
+      <!-- <img src="images/flowers.jpg" alt="flower image" width="300"> -->
+      <img src="../images/flowers.jpg" alt="flower image" width="300">
+
+
+
+      <div>This is a div</div>
+
+
+      <span>Span 1</span>
+      
+      <h1><span>Build backlinks.</span> On auto-pilot.</h1>
+
+
+      <!-- ============== table =============== -->
+
+      <table border="1" width="600">
+        <caption>Products</caption>
+       
+         <thead>
+          <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+           <tr>
+          <td>Laptop</td>
+          <td>10</td>
+          <td rowspan="2">1200$</td>
+          <td>12000$</td>
+        </tr>
+         <tr>
+          <td>Smartphone</td>
+          <td>25</td>
+          <td>20000$</td>
+        </tr>
+         <tr>
+          <td>Tablet</td>
+          <td>15</td>
+          <td>500$</td>
+          <td>7500$</td>
+        </tr>
+        </tbody>
+       
+        
+       
+          <tfoot>
+           <tr>
+          <td colspan="3">Brand Total</td>
+          
+          <td>39500$</td>
+
+        </tr>
+        </tfoot>
+        
+       
+      </table>
+
+
+
+      <!-- ================ Form ============ -->
+       <!-- Query String  -->
+`     <!-- ?username=mona&password=123&Hobbies=on&Hobbies=on -->
+        <button>Test</button>
+
+      <br><br><br>
+      <form action="/api" method="post">
+
+        <label>Username</label>
+        <input type="text" name="username" >
+          
+        <br><br>
+        <label>Password</label>
+        <input type="password" name="password">
+
+
+        <br><br>
+
+        <label>Hobbies: </label>
+        <br>
+        <input type="checkbox" name="Hobbies" value="reading books">
+        <label>Reading books</label>
+        <br>
+        <input type="checkbox" name="Hobbies" value="swimming">
+        <label>Swimming</label>
+        <br>
+
+        <input type="checkbox" name="Hobbies" value="playing video games">
+        <label>Playing video games</label>
+
+
+        <br>
+
+        <label>Gender :</label>
+        <br><br>
+        <input type="radio" name="Gender" value="m">
+        <label>Male</label>
+        <br>
+
+        <input type="radio" name="Gender" value="f">
+        <label>Female</label>
+
+
+        <br> <br>
+
+       <label>ITI Tracks</label> 
+        <select name="Dept">
+          <option value="pd">Professional web development and bi</option>
+          <option>OS</option>
+          <option>AI</option>
+        </select>
+
+        <br><br>
+
+
+        <textarea name="comment" cols="20" rows="10"></textarea>
+
+        <br><br>
+
+
+        <!-- <button type="submit">login</button> -->
+         <input type="submit" value="Login">
+
+      </form>
+
+        <button>Test</button>
+
+  </body>
+</html>
+
+

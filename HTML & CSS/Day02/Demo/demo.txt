@@ -1,0 +1,27 @@
+============================================
+
+Agenda:
+
+ - Introduction to CSS
+ - CSS Text
+ - CSS Box Model
+ - Background
+ - Float		
+
+=============================================
+
+  CSS : Cascading Style Sheets.
+
+  CSS : Styling , Presentation.
+
+
+=============================================  
+
+  1- inline Style : style attr
+
+  2- Internal Style : style tag
+
+  3- External Style : CSS Sheet
+
+
+============================================

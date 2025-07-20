@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="content">
+        <h1 id="title">Validation Game</h1>
+        <div id="background">
+            <div id="form">
+                <!-- name -->
+                <div id="name" class="field">
+                    <label class="label" id="nameLabel">name</label>
+                    <input type="text" class="input" id="nameInput">
+                    <p class="error" id="nameError"></p>
+                </div>
+                <!-- password -->
+                <div id="password" class="field">
+                    <label class="label" id="passwordLabel">password</label>
+                    <input type="text" class="input" id="passwordInput">
+                    <p class="error" id="passwordError"></p>
+                </div>
+                <!-- email -->
+                <div id="email" class="field">
+                    <label class="label" id="emailLabel">email</label>
+                    <input type="text" class="input" id="emailInput">
+                    <p class="error" id="emailError"></p>
+                </div>
+                <!-- gender -->
+                <div id="gender" class="field">
+                    <label class="label" id="genderLabel">Gender</label>
+                    <div id="genderOptions">
+                        <div class="genderOption">
+                            <input type="radio" id="male" name="gender">
+                            <label>Male</label>
+                        </div>
+                        <div class="genderOption">
+                            <input type="radio" id="female" name="gender">
+                            <label>Female</label>
+                        </div>
+                    </div>
+                    <p class="error" id="genderError"></p>
+                </div>
+                <!-- sport -->
+                <div id="sport" class="field">
+                    <label class="label" id="sportLabel">Sport</label>
+                    <div id="sportOptions">
+                        <div class="sportOption">
+                            <input type="checkbox" id="football" name="sports" value="football">
+                            <label for="football">Football</label>
+                        </div>
+                        <div class="sportOption">
+                            <input type="checkbox" id="basketball" name="sports" value="basketball">
+                            <label for="basketball">Basketball</label>
+                        </div>
+
+                        <div class="sportOption">
+                            <input type="checkbox" id="tennis" name="sports" value="tennis">
+                            <label for="tennis">Tennis</label>
+                        </div>
+
+                        <div class="sportOption">
+                            <input type="checkbox" id="swimming" name="sports" value="swimming">
+                            <label for="swimming">Swimming</label>
+                        </div>
+                    </div>
+                    <p class="error" id="sportError"></p>
+                </div>
+                <!-- country -->
+                <div id="country" class="field">
+                    <label class="label" id="countryLabel">Country</label>
+                    <select class="input" id="countryInput">
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="eg">Egypt</option>
+                        <option value="usa">America</option>
+                        <option value="uk">UK</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                    <p class="error" id="countryError"></p>
+                </div>
+                <!-- buttons -->
+                <div id="buttons">
+                    <button class="btn" id="submitButton" onclick="submitForm()">Submit</button>
+                    <button class="btn" id="resetButton" onclick="resetForm()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

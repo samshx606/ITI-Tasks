@@ -1,0 +1,335 @@
+/* ============== Global Style ============= */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  color: rgb(14, 11, 61);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Added for better layout control */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(83, 84, 121);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 2;
+  font-size: 18px;
+}
+
+h1 {
+  letter-spacing: -1px;
+  font-size: 62px;
+  margin: 15px 0px 10px; /* Fixed missing semicolon */
+}
+
+h2 {
+  font-size: 56px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+li {
+  display: inline-block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix::after {
+  /* Added clearfix helper */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+  border: none; /* Added for button styling */
+  cursor: pointer; /* Added for better UX */
+  transition: all 0.3s ease; /* Added smooth transitions */
+}
+
+.btn-outline {
+  border: 1px solid rgba(37, 31, 182, 0.13);
+  background-color: transparent; /* Added explicit background */
+}
+
+.btn-outline:hover {
+  background-color: rgba(37, 31, 182, 0.05);
+}
+
+.btn-bg {
+  background-color: rgb(20, 99, 255);
+  color: #fff;
+}
+
+.btn-bg:hover {
+  background-color: rgb(15, 84, 230);
+}
+
+/* ============== Navbar =================== */
+
+.main-nav {
+  width: 1000px;
+  margin: 50px auto;
+  overflow: hidden; /* Added to contain floated elements */
+}
+
+.nav-logo {
+  float: left;
+}
+
+.nav-list {
+  float: right;
+}
+
+/* ============== Hero =================== */
+
+.hero {
+  text-align: center;
+  margin-top: 100px;
+  max-width: 1000px; /* Added max-width for better readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgb(20, 99, 255);
+  font-weight: 600; /* Added for better visual hierarchy */
+  margin-bottom: 15px; /* Added spacing */
+}
+
+.hero-description {
+  margin-bottom: 30px;
+  max-width: 600px; /* Added for better readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============== Features =================== */
+
+.features {
+  background-color: rgb(247, 249, 252);
+  margin: 200px 200px 150px;
+  border-radius: 24px;
+  overflow: hidden; /* Added to contain floated elements */
+}
+
+/* ============== Features-team =================== */
+
+.team-content {
+  width: 45%;
+  float: left;
+  padding: 100px 0px 100px 100px;
+}
+
+.team-bg {
+  background-image: url(images/team_bg.webp);
+  width: 40%;
+  height: 600px;
+  background-size: cover; /* Changed from 100% 100% for better image scaling */
+  background-position: center;
+  background-repeat: no-repeat;
+  float: right;
+}
+
+.team-text,
+.integration-text {
+  margin: 20px 0px;
+}
+
+/* ============== Features Integration =================== */
+
+.integration-content {
+  float: right;
+  width: 45%;
+  padding: 100px 0px 0px 10px;
+}
+
+.integration-icon,
+.team-icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 35px;
+}
+
+.integration-bg {
+  background-image: url(images/integrations_bg.webp);
+  width: 40%;
+  height: 600px;
+  background-size: cover; /* Changed from 100% 100% for better image scaling */
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+/* ============== Payments =================== */
+
+.payments {
+  text-align: center;
+  margin-bottom: 150px;
+  max-width: 1000px; /* Added max-width for consistency */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.payments-subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgb(114, 20, 255);
+  font-weight: 600; /* Added for consistency */
+  margin-bottom: 15px; /* Added spacing */
+}
+
+/* ============== Footer =================== */
+
+.footer {
+  background-color: rgb(247, 249, 252);
+  margin: 0px 200px 50px;
+  padding: 24px 40px;
+  border-radius: 12px;
+  overflow: hidden; /* Added to contain floated elements */
+}
+
+.footer-subtitle {
+  font-size: 14px;
+  float: left;
+  line-height: 1.5; /* Added for better readability */
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list a {
+  font-size: 22px;
+  margin: 0px 10px;
+  transition: color 0.3s ease; /* Added smooth transitions */
+}
+
+.footer-list a:hover {
+  color: rgb(20, 99, 255);
+}
+
+.footer-list i {
+  color: rgb(83, 84, 121);
+}
+
+/* ============== Responsive Design =================== */
+
+@media (max-width: 1200px) {
+  .main-nav {
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  .features,
+  .footer {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    width: 95%;
+  }
+
+  .nav-logo,
+  .nav-list {
+    float: none;
+    text-align: center;
+  }
+
+  .nav-list {
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  .team-content,
+  .integration-content {
+    width: 100%;
+    float: none;
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .team-bg,
+  .integration-bg {
+    width: 100%;
+    float: none;
+    height: 300px;
+  }
+
+  .features {
+    margin: 100px 20px 100px;
+  }
+
+  .footer {
+    margin: 0px 20px 50px;
+  }
+
+  .footer-subtitle,
+  .footer-list {
+    float: none;
+    text-align: center;
+  }
+
+  .footer-list {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .team-content,
+  .integration-content {
+    padding: 30px 20px;
+  }
+}
