@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="content">
+        <h1>Welcome to My Page</h1>
+        <div id="form">
+            <div class="field" id="name">
+                <label class="label" id="nameLabel">Name</label>
+                <input type="text" class="textBox" id="nameInput" placeholder="Enter your name">
+            </div>
+            <div class="field" id="age">
+                <label class="label" id="ageLabel">Age</label>
+                <input type="text" class="textBox" id="ageInput" placeholder="Enter your age">
+            </div>
+            <div class="field" id="gender">
+                <label class="label" id="genderLabel">Gender</label>
+                <div id="genderOptions">
+                    <div class="genderOption">
+                        <input type="radio" id="male" name="gender">
+                        <label>Male</label>
+                    </div>
+                    <div class="genderOption">
+                        <input type="radio" id="female" name="gender">
+                        <label>Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="field" id="hobbies">
+                <label class="label" id="colorLabel">Favorite Color</label>
+                <select id="colorSelect">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </div>
+        </div>
+        <button id="register" onclick="register()">Register</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

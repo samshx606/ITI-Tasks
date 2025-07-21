@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-self: center;
+            width: 600px;
+            height: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon {
+            margin-top: 80px;
+            margin-bottom: 50px;
+            font-size: 100px;
+            padding: 20px 40px;
+            border: 5px solid #333;
+            /* Combined border properties */
+            border-radius: 10px;
+            /* Optional: adds rounded corners */
+            display: inline-block;
+            /* Ensures proper padding/border behavior */
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        #aboutName,
+        #visitCount {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <i id="icon"></i>
+        <p>Welcome <span id="aboutName"></span>. you have visited the site <span id="visitCount"></span> times.</p>
+    </div>
+    <script src="about.js"></script>
+</body>
+
+</html>
