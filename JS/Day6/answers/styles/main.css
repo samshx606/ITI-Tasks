@@ -1,0 +1,179 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f7fa;
+    padding: 20px 10px;
+    width: 100%;
+}
+
+#content {
+    background-color: white;
+    border-radius: 12px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#btn-fields {
+    margin-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#search {
+    float: right;
+}
+
+#search-input {
+    border: 1px solid #e0e3e7;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 8px 10px;
+    width: 200px;
+    text-align: center;
+}
+
+#search-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    background-color: #3498db;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 15px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#table {
+    background-color: white;
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 100%;
+}
+
+th, td {
+    border-bottom: 1px solid #e0e3e7;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+tr.even {
+    background-color: #f8fafc;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+
+td img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #e0e3e7;
+}
+
+.actions-btn {
+    border-radius: 6px;
+    font-size: 0.85rem;
+    min-width: 70px;
+    padding: 5px 8px;
+}
+
+.view-btn {
+    background-color: #3498db;
+}
+
+.view-btn:hover {
+    background-color: #2980b9;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    #content {
+        padding: 15px;
+    }
+    
+    #btn-fields {
+        display: block;
+    }
+    
+    #search {
+        float: none;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    #search-input {
+        width: 100%;
+    }
+    
+    button {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    th, td {
+        font-size: 0.85rem;
+        padding: 5px;
+    }
+    
+    .actions-btn {
+        display: block;
+        margin-bottom: 3px;
+        width: 100%;
+        padding: 4px;
+    }
+}

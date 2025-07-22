@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Main</title>
+</head>
+
+<body>
+    <div id="content">
+        <h1>AJAX User Data fetcher</h1>
+        <div id="btn-fields">
+            <button id="fetch-btn">Fetch Users Data</button>
+            <div id="search">
+                <input type="text" id="search-input" placeholder="Search By ID">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+        <table id="table">
+            <thead id="table-header">
+                <tr>
+                    <th>ID</th>
+                    <th>Avatar</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Phone</th>
+                    <th>Website</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="user-data">
+            </tbody>
+        </table>
+    </div>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>
