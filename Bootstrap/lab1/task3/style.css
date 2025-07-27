@@ -1,0 +1,86 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "content"
+                "footer";
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            background-color: rgb(184, 234, 234);
+            justify-items: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        
+        .header {
+            grid-area: header;
+            background-color: rgb(7, 206, 210);
+            padding: 20px;
+            width: 70%;
+        }
+        
+        .content {
+            grid-area: content;
+            display: grid;
+            grid-template-areas: "aside article";
+            grid-template-columns: 40% 50%;
+            justify-content: space-between;
+            background-color: rgb(7, 206, 210);
+            padding: 20px;
+            width: 70%;
+            gap: 20px;
+        }
+        
+        .aside {
+            grid-area: aside;
+            background-color: rgb(120, 245, 127);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+        }
+        
+        .article {
+            grid-area: article;
+            background-color: yellow;
+            display: grid;
+            grid-template-areas: 
+                "title"
+                "images";
+            grid-template-rows: auto 1fr;
+        }
+        
+        .article-title {
+            grid-area: title;
+        }
+        
+        .images {
+            grid-area: images;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            align-self: end;
+        }
+        
+        .image {
+            background-color: aquamarine;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+        
+        .footer {
+            grid-area: footer;
+            background-color: rgb(7, 206, 210);
+            padding: 20px;
+            width: 70%;
+        }
