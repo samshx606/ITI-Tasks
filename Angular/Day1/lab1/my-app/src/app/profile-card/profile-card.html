@@ -1,0 +1,12 @@
+@if(exist){
+<div class="profile-card">
+    <img [src]="image" alt="Profile Image" class="profile-image">
+
+    <h2>{{ name | uppercase }}</h2>
+    <p class="job-title">{{ job }}</p>
+
+    <p class="bio">{{ bio }}</p>
+
+    <button (click)="removeProfile()" class="remove-btn">Remove</button>
+</div>
+}
