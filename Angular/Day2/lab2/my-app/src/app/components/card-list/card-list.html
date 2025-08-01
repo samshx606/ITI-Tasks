@@ -1,0 +1,10 @@
+<div class="content">
+    <app-search (searchChanged)="onSearchChange($event)"></app-search>
+    <div class="card-list">
+        @for (card of cards; track $index) {
+        <app-card class="card" [id]="card.id" [avatar]="card.avatar" [name]="card.name" [job]="card.job"
+            [bio]="card.bio" [isLast]="$index === cards.length - 1" (removeCard)="onRemoveCard($event)">
+        </app-card>
+        }
+    </div>
+</div>
