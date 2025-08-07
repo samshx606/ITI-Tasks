@@ -3,7 +3,7 @@
     <div class="card-list">
         @for (card of cards; track $index) {
         <app-card class="card" [id]="card.id" [avatar]="card.avatar" [name]="card.name" [job]="card.job"
-            [bio]="card.bio" [isLast]="$index === cards.length - 1" (removeCard)="onRemoveCard($event)">
+            [bio]="card.bio" [isLast]="$last" (removeCard)="onRemoveCard($event)">
         </app-card>
         }
     </div>
