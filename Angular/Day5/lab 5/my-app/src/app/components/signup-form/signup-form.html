@@ -1,0 +1,79 @@
+<h1 class="form-title">Sign Up</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="name group">
+        <label>Name:</label>
+        <input class="input name-input" formControlName="name">
+        @if (name?.invalid && name?.touched) {
+            <div class="error-message">
+                @if (name?.errors?.['required']) {
+                    <span>Name is required</span>
+                }
+            </div>
+        }
+    </div>
+    <div class="email group">
+        <label>Email:</label>
+        <input class="input email-input" formControlName="email" type="email">
+        @if (email?.invalid && email?.touched) {
+            <div class="error-message">
+                @if (email?.errors?.['required']) {
+                    <span>Email is required</span>
+                }
+                @if (email?.errors?.['email']) {
+                    <span>Please enter a valid email address</span>
+                }
+            </div>
+        }
+    </div>
+    <div class="username group">
+        <label>Username:</label>
+        <input class="input username-input" formControlName="username">
+        @if (username?.invalid && username?.touched) {
+            <div class="error-message">
+                @if (username?.errors?.['required']) {
+                    <span>Username is required</span>
+                }
+                @if (username?.errors?.['minlength']) {
+                    <span>Username must be at least 6 characters</span>
+                }
+                @if (username?.errors?.['maxlength']) {
+                    <span>Username must be no more than 10 characters</span>
+                }
+            </div>
+        }
+    </div>
+
+    <div class="password group">
+        <label>Password:</label>
+        <div class="password-input-wrapper">
+            <input 
+                class="input password-input" 
+                formControlName="password"
+                [type]="showPassword ? 'text' : 'password'"
+            >
+            <button 
+                type="button" 
+                class="toggle-password-btn"
+                (click)="togglePasswordVisibility()"
+                [attr.aria-label]="showPassword ? 'Hide password' : 'Show password'"
+            >
+                <span class="toggle-icon">{{ showPassword ? '🙈' : '👁️' }}</span>
+            </button>
+        </div>
+        @if (password?.invalid && password?.touched) {
+            <div class="error-message">
+                @if (password?.errors?.['required']) {
+                    <span>Password is required</span>
+                }
+                @if (password?.errors?.['minlength']) {
+                    <span>Password must be at least 8 characters</span>
+                }
+                @if (password?.errors?.['maxlength']) {
+                    <span>Password must be no more than 16 characters</span>
+                }
+            </div>
+        }
+    </div>
+
+    <button class="btn" type="submit" [disabled]="form.invalid">Sign Up</button>
+</form>
