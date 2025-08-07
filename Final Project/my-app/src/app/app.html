@@ -1,0 +1,37 @@
+<div class="app-container">
+  <header class="app-header">
+    <h1>{{ title() }}</h1>
+  </header>
+
+  <main class="app-main">
+    <!-- Search Section -->
+    <div class="search-section">
+      <form [formGroup]="searchForm" class="search-form">
+        <input 
+          type="text" 
+          formControlName="searchTerm" 
+          placeholder="Search by username or email..."
+          class="search-input">
+      </form>
+      <button class="btn btn-primary" (click)="openAddForm()">
+        Add New User
+      </button>
+    </div>
+
+    <!-- User List -->
+    <app-user-list 
+      [users]="filteredUsers()" 
+      (userEdit)="openEditForm($event)"
+      (userDelete)="onUserDelete($event)">
+    </app-user-list>
+
+    <!-- User Form Popup -->
+    <app-user-form 
+      *ngIf="showForm"
+      [isEdit]="isEditMode"
+      [user]="selectedUser"
+      (formSubmit)="onFormSubmit($event)"
+      (formClose)="closeForm()">
+    </app-user-form>
+  </main>
+</div>
