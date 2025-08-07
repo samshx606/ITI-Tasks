@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.not-found-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+}
+
+.not-found-title {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #dc3545;
+    margin-bottom: 1rem;
+}
+
+.not-found-message {
+    font-size: 1.5rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.not-found-link {
+    padding: 0.75rem 1.5rem;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    transition: background 0.2s;
+}
+
+.not-found-link:hover {
+    background: #0056b3;
+}

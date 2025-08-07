@@ -1,0 +1,10 @@
+<div class="content">
+    <h1 class="title">User Details</h1>
+    <div class="user">
+        <img class="user-avatar" src="{{ user?.avatar }}" alt="avatar">
+        <h2 class="user-name">{{ user?.name }}</h2>
+        <p class="user-job">{{ user?.job }}</p>
+        <p class="user-bio">{{ user?.bio }}</p>
+        <button class="user-btn" (click)="backToUsers()">Back to Users</button>
+    </div>
+</div>

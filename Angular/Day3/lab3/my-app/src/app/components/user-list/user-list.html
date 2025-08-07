@@ -1,0 +1,10 @@
+
+<div class="content">
+    <div class="user-list">
+        @for (user of users; track $index) {
+        <app-user class="user" [id]="user.id" [avatar]="user.avatar" [name]="user.name" [job]="user.job"
+            [bio]="user.bio" (removeUser)="onRemoveUser($event)">
+        </app-user>
+        }
+    </div>
+</div>
